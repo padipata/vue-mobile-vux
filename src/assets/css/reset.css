@@ -1,0 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body {
+  background-color: RGBA(247, 247, 247, 1);
+  color: #333333;
+  font-size: 0.26rem;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  font-family: PingFangSC-Regular, arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  /*超出标签宽度自动换行*/
+  word-wrap: break-word;
+  word-break: break-all;
+  /*为元素设定的宽度和高度决定了元素的边框盒*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*取消H5浏览器聚焦样式*/
+img, button, textarea, input, a {
+  color: #333333;
+  vertical-align: middle;
+  border: none;
+  outline: medium !important;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*修改mint-ui中switch样式*/
+.mint-switch-core::before {
+  height: 0.4rem;
+  width: 0.78rem;
+}
+
+.mint-switch-core::after {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.mint-switch-core {
+  height: 0.45rem;
+  width: 0.82rem;
+}
+
+/*修改活动颜色*/
+.mint-switch-core {
+  border-color: #e0e0e0 !important;
+  background-color: RGBA(215, 54, 54, 1) !important;
+}
+
+
+

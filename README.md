@@ -1,0 +1,39 @@
+# 基于vue2.js移动端单页应用模板
+
+## 模板内容
+
+更新时间| 更新内容|更新说明
+---|---|---
+2017-09-12 | 搭建基本项目模板|无
+2017-09-12 | 增加服务器基本配置
+2017-09-16 | 增加HTTP逻辑层示例
+2017-09-18 | 添加全局默认样式 | 路径：assets/css/reset.css
+2017-09-18 | 添加移动端rem布局，路径：jslib/UIAdapter | 当前检测宽度为750
+2017-09-20 | 配置vue-router
+2017-09-25 | 增加vue轮播插件 vue-awesome-swiper | ^2.6.4
+~~2017-09-27~~ | ~~Vuex状态管理~~（按项目大小取舍） | ~~^2.2.9~~
+2017-09-28 | 增加vant组件库 |
+2017-09-28 | 引入css-loader & style-loader | 已配置 webpack
+2017-09-28 | 引入地区联动插件 LArea.js | 按项目需求取舍
+2017-11-30 | 引入 sha1 加密插件 | ^1.1.1
+2017-11-30 | 引入 URLEncode 加/解码插件 | ^1.1.0
+2017-11-30 | 引入 axios 并配置 HttpRequest.js 文件 | ^0.16.1
+2017-12-01 | 引入 less 并配置 webpack | 使用方式：在style中声明 lang="less"
+2018-1-30 | 添加路由懒加载 |
+
+
+## 安装与运行
+
+```
+git clone https://github.com/padipata/vue-mobile-template.git
+
+cd vue-mobile-template
+
+cnpm i
+
+npm run dev //服务端运行 访问 http://localhost:8081
+
+npm run build 项目打包
+
+感兴趣的童鞋可以来个star
+```
