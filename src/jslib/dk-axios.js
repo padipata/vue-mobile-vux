@@ -9,7 +9,7 @@ const HttpRequest = axios.create({
   // headers: {"token": "airon"}
 });
 
-//七牛云
+// 七牛云
 // const getQiniu = () => {
 //   return HttpRequest({
 //     url: 'api/Qiniu/index',
