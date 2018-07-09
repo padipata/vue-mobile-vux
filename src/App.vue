@@ -12,7 +12,9 @@
   }
 </script>
 
-<style>
+<style lang="less">
+  @import '~vux/src/styles/1px.less'; //1px 解决方案
+
   .router-fade-enter-active, .router-fade-leave-active {
     transition: opacity .2s;
   }

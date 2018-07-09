@@ -1,59 +1,45 @@
 <template>
   <div>
-    <!--<div>-->
-    <!--<van-button type="default">默认按钮</van-button>-->
-    <!--<van-button type="primary">主要按钮</van-button>-->
-    <!--<van-button type="danger">危险按钮</van-button>-->
-    <!--</div>-->
+    <p @click="onClick()">点我</p>
 
-    <div>
-      <van-address-edit
-        :area-list="areaList"
-        show-postal
-        show-delete
-        show-set-default
-        show-search-result
-        :search-result="searchResult"
-        @save="onSave"
-        @delete="onDelete"
-        @change-detail="onChangeDetail"
-      />
-
-    </div>
-
+    <tabbar style="position: fixed">
+      <tabbar-item selected>
+        <img slot="icon" src="../assets/img/ic_home_home_tab_light.png">
+        <span slot="label">首页</span>
+      </tabbar-item>
+      <tabbar-item>
+        <img slot="icon" src="../assets/img/ic_home_classtify_tab_normal.png">
+        <span slot="label">商品</span>
+      </tabbar-item>
+      <tabbar-item badge="2">
+        <img slot="icon" src="../assets/img/ic_home_shop_tab_normal.png">
+        <span slot="label">购物车</span>
+      </tabbar-item>
+      <tabbar-item>
+        <img slot="icon" src="../assets/img/ic_home_mine_tab_normal.png">
+        <span slot="label">个人中心</span>
+      </tabbar-item>
+    </tabbar>
   </div>
 </template>
+
 <script>
-  import areaList from '../jslib/area'
+  import {Tabbar, TabbarItem} from 'vux'
 
   export default {
     data() {
-      return {
-        areaList: areaList,
-        searchResult: []
-      }
+      return {}
     },
-    components: {},
+    components: {
+      Tabbar,
+      TabbarItem,
+    },
     methods: {
-      onSave() {
-        Toast('save');
-      },
-      onDelete() {
-        Toast('delete');
-      },
-      onChangeDetail(val) {
-        if (val) {
-          this.searchResult = [{
-            name: '黄龙万科中心',
-            address: '杭州市西湖区'
-          }];
-        } else {
-          this.searchResult = [];
-        }
+      onClick() {
+        this.$vux.toast.show({text: 'Loading'})
       }
     },
     mounted() {
-
     },
     updated() {
     }
